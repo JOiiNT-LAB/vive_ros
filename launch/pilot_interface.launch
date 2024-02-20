@@ -21,7 +21,7 @@
   <arg name="image_right_info" default="/videostream/right/camera_info" />
 
 
-  <node name="vive_hmd" pkg="vive_ros" type="vive_hmd" launch-prefix="$(env HOME)/.steam//steam/ubuntu12_32/steam-runtime/run.sh" output="log" required="true">
+  <node name="vive_hmd" pkg="vive_ros" type="vive_hmd" launch-prefix="$(env HOME)/.steam//steam/ubuntu12_32/steam-runtime/run.sh" output="screen" required="true">
     <param name="interpupillar_distance" value="$(arg interpupillar_distance)"/>
     <param name="cam_f" value="$(arg cam_f)"/>
     <remap from="~image_left" to="$(arg image_left)" />

@@ -678,7 +678,7 @@ void CMainApplication::ProcessVREvent( const vr::VREvent_t & event )
   {
   case vr::VREvent_TrackedDeviceActivated:
     {
-      SetupRenderModelForTrackedDevice( event.trackedDeviceIndex );
+      //SetupRenderModelForTrackedDevice( event.trackedDeviceIndex );
       dprintf( "Device %u attached. Setting up render model.\n", event.trackedDeviceIndex );
     }
     break;
@@ -1692,7 +1692,7 @@ void CMainApplication::SetupRenderModels()
     if( !m_pHMD->IsTrackedDeviceConnected( unTrackedDevice ) )
       continue;
 
-    SetupRenderModelForTrackedDevice( unTrackedDevice );
+    //SetupRenderModelForTrackedDevice( unTrackedDevice );
   }
 
 }
